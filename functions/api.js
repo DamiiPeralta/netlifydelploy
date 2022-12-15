@@ -12,7 +12,7 @@ const router = express.Router();
 
 app.get("/",function(req, res){
     
-    res.sendFile(__dirname + "/dist/signup.html" );
+    res.sendFile(__dirname + "/var/task/functions/dist/signup.html" );
     //res.send("Server is up and running") only can send 1 per get
 })
 app.post("/", function(req, res){
