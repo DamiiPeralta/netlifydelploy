@@ -11,6 +11,7 @@ const app = express();
 const router = express.Router();
 
 app.get("/",function(req, res){
+    
     res.sendFile(__dirname + "/dist/signup.html" );
     //res.send("Server is up and running") only can send 1 per get
 })
@@ -19,7 +20,7 @@ app.post("/", function(req, res){
     const firstName = req.body.fName;
     const lastName =  req.body.lName;
     const email = req.body.email;
-
+    console.log(req.body.email);
     const data = {
         members: [
             {
